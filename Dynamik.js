@@ -1,19 +1,11 @@
-// Dynamik.js
 export const Dynamik = {
     energy: 0,
-
-    update(mode) {
-        switch(mode) {
-            case "ICE": this.energy += 1; break;
-            case "HOT": this.energy += 3; break;
-            case "HYBRID": this.energy += 4; break;
-            case "UNLOGIKAL": this.energy += 7; break;
+    update(hw) {
+        switch(hw) {
+            case "GPU": this.energy += 3; break;
+            case "CPU": this.energy += 2; break;
+            case "RAM": this.energy += 1; break;
         }
-
-        return {
-            mode,
-            energy: this.energy,
-            note: "Dynamik aktualisiert"
-        };
+        return { hw, energy: this.energy };
     }
 };
