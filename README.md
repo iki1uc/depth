@@ -1,154 +1,200 @@
-depth – Modulares Kraft‑, Teilungs‑ und Axiom‑System
-Dieses Repository enthält ein vollständig modulares, fraktales Kraft‑ und Teilungssystem.
-Alle Dateien sind eigenständige Module, die zusammen ein dynamisches depth‑Framework bilden.
+# depth – Fraktales Kraft‑, Teilungs‑, Axiom‑ und Dynamik‑System
 
-📐 Grundprinzipien des Systems
-1. Einleitung
-Die Einleitung ist der Startimpuls.
-Sie bestimmt:
+Dieses Repository bildet ein vollständiges, fraktales, dynamisches System aus
+Kräften, Teilungen, Achsen, Axiomen, Verbrauchslogik, Weltmodulen und Technikmodulen.
+Es ist modular aufgebaut und folgt einer klaren Pipeline:
 
-Startwert
+**Einleitung → Losleitung → Einteilung → Teilung → Tiefe → Kraft → Welt**
 
-Startachse
+---
 
-Starttiefe
+# 1. Pipeline (Hauptfluss)
 
-→ definiert in Einleitung.js
+Die depth‑Pipeline besteht aus fünf Kernmodulen:
 
-2. Losleitung
-Die Losleitung überträgt den Startimpuls in die aktive Achse.
-Sie entscheidet:
+### 1. Einleitung  
+Startimpuls des Systems.  
+→ `Einleitung.js`
 
-wohin der Impuls geleitet wird
+### 2. Losleitung  
+Weitergabe des Impulses an die Achsen.  
+→ `losletung.js`
 
-welche Achse aktiviert wird
+### 3. Einteilung  
+Wählt die aktive Achse basierend auf dem Wert.  
+→ `Einteilung.js`
 
-→ definiert in losletung.js
+### 4. Teilung  
+Zählt und verarbeitet die Achsenaktivierung.  
+→ `teilung.js`
 
-3. Einteilung
-Die Einteilung ist die Meta‑Regel, die alle Achsen steuert.
-Sie entscheidet anhand eines Wertes:
+### 5. Tiefe / Maßstab  
+Fraktale Skalierung (3/9/27/81/162/243).  
+→ `pro.js`
 
-unter
+---
 
-über
+# 2. Achsen (6‑Achsen‑Teilung)
 
-tief
+Das depth‑System arbeitet mit sechs Achsen:
 
-y.x
+| Achse | Datei | Bedeutung |
+|-------|--------|-----------|
+| **unter** | `u.t.js` | Teilung nach unten |
+| **über** | `t.u.js` | Teilung nach oben |
+| **tief** | `UM.x.js` | Tiefen‑Teilung |
+| **y.x** | `y.x.js` | Quer‑Teilung |
+| **x.y** | `x.y.js` | Längs‑Teilung |
+| **q.t** | `q.t.js` | Flow‑Teilung |
+| **t.q** | `t,q,js` | Zeit‑Flow‑Teilung |
 
-x.y
+Diese Achsen werden dynamisch durch die Einteilung aktiviert.
 
-q.t
+---
 
-t.q
+# 3. Fraktale Skalen (Tiefe)
 
-→ definiert in Einteilung.js
-
-4. Teilung
-Die Teilung ist die konkrete Ausführung der Achsen.
-Sie zählt, wie oft jede Achse aktiviert wurde.
-
-→ definiert in teilung.js
-
-🧭 Die 6 Achsen des depth‑Systems
-Achse	Datei	Bedeutung
-unter	u.t.js	Teilung nach unten
-über	t.u.js	Teilung nach oben
-tief	UM.x.js	Tiefen‑Teilung
-y.x	y.x.js	Quer‑Teilung
-x.y	x.y.js	Längs‑Teilung
-q.t	q.t.js	Flow‑Teilung
-t.q	t,q,js	Zeit‑Flow‑Teilung
-
-
-⚡ Kraft‑Module
-Kraft	Datei	Bedeutung
-A‑Kraft	Kräfte.js	Arbeitskraft
-T‑Kraft	Kräfte.js	Zeitkraft
-NB‑Mann	Kräfte.js	Neutral‑Balance
-Impuls	impulse.js	Bewegungsimpuls
-Beam	iceTrefferEngine.js	Zugehörigkeitsstrahl
-Unnorm	misstreffer.js	Abweichungszustand
-
-
-📊 System‑Zustände
-Zustand	Datei
-gesund	gesund.js
-wackelig	wackelig.js
-ausderbahn	ausderbahn.js
-
-
-📈 Fraktale Skalen
 Das depth‑System skaliert automatisch:
 
-3‑Teilung
+- **3** – Basis  
+- **9** – Überlast  
+- **27** – Tiefenbildung  
+- **81** – Komplexität  
+- **162** – Flow‑Zone  
+- **243** – Extrem / Unnorm
 
-9‑Teilung
+→ gesteuert durch `pro.js`
 
-27‑Teilung
+---
 
-81‑Teilung
+# 4. Kräfte
 
-162‑Teilung
+Das System besitzt drei Grundkräfte und mehrere Zusatzkräfte:
 
-243‑Teilung
+### Grundkräfte  
+→ `Kräfte.js`
 
-→ gesteuert durch pro.js
+- **A‑Kraft** – Arbeitskraft  
+- **T‑Kraft** – Zeitkraft  
+- **NB‑Mann** – Neutral‑Balance
 
-📦 Verbrauch & Produktion
-Bereich	Datei
-Verbrauch	Verbrauch.js
-Überproduktion	Ueberproduktion.js
-Überbildung	Ueberbildung.js
-Differenzwerte	Differenzwerte.js
+### Zusatzkräfte  
+- **Impuls** → `impulse.js`  
+- **Schub** → `schub.js`  
+- **Feuer** → `feuer.js`  
+- **Voltage** → `VOLTAGE.js`  
+- **RUM** → `RUM.js`  
+- **RUMumRUM** → `RUMumRUM.js`
 
+---
 
-🧠 Axiom‑System
-Axiom3x3.js
+# 5. Zustände
 
-tmpAxiomEngine.js
+Das System kennt drei Hauptzustände:
 
-Diese Module bilden das logische Fundament des depth‑Systems.
+| Zustand | Datei |
+|--------|--------|
+| gesund | `gesund.js` |
+| wackelig | `wackelig.js` |
+| ausderbahn | `ausderbahn.js` |
 
-🖥️ Hardware‑Simulation
-Modul	Datei
-CPU	cpu.j
-GPU	gpu.js
-SSE/MMX	sse.js / mmx.js
-Mainboard	mainboard.js
+---
 
+# 6. Welt‑Module
 
-🌐 Welt‑Module
-Bereich	Datei
-eco	eco.js
-markt	markt.js
-boerse	boerse.js
-energie	energie.js
-feuer	feuer.js
-ZEN	ZEN.js
+Diese Module simulieren externe Systeme:
 
+| Bereich | Datei |
+|--------|--------|
+| Ökologie | `eco.js` |
+| Markt | `markt.js` |
+| Börse | `boerse.js` |
+| Energie | `energie.js` |
+| ZEN‑Zone | `ZEN.js` |
 
-📚 Dokumentation
-README.md → diese Datei
+---
 
-mind.md → interne Logik
+# 7. Axiom‑System
 
-uni.md → universelle Regeln
+Das depth‑System besitzt ein eigenes Axiom‑Framework:
 
-🚀 Startpunkt
-Die depth‑Pipeline läuft so:
+- **Axiom3x3** → `Axiom3x3.js`  
+- **tmpAxiomEngine** → `tmpAxiomEngine.js`
 
-Einleitung erzeugt Startimpuls
+Diese Module bilden die logische Grundlage des Systems.
 
-Losleitung leitet Impuls weiter
+---
 
-Einteilung wählt Achse
+# 8. Verbrauch & Produktion
 
-Teilung führt Achse aus
+| Bereich | Datei |
+|--------|--------|
+| Verbrauch | `Verbrauch.js` |
+| Überproduktion | `Ueberproduktion.js` |
+| Überbildung | `Ueberbildung.js` |
+| Differenzwerte | `Differenzwerte.js` |
 
-pro.js skaliert Tiefe
+---
 
-Kraft‑Module reagieren
+# 9. Technik‑Module
 
-eco/markt/boerse simulieren Weltverhalten
+Diese Module simulieren technische Systeme:
+
+| Modul | Datei |
+|--------|--------|
+| CPU | `cpu.j` |
+| GPU | `gpu.js` |
+| SSE | `sse.js` |
+| MMX | `mmx.js` |
+| Mainboard | `mainboard.js` |
+| Direct3D | `driect3d.js` |
+| icy3D | `icy3d.js` |
+| VectorBind | `vectorBind.js` |
+| Vector‑Ops | `Vector‑Ops.js` |
+
+---
+
+# 10. Dynamik & Logik
+
+- **Dynamik** → `Dynamik.js`  
+- **dyn** → `dyn.js`  
+- **nc** → `nc.js`  
+- **role** → `role.js`  
+- **bildung** → `bildung.js`  
+- **primär** → `primär.js`  
+- **misstreffer** → `misstreffer.js`  
+- **voodoo** → `voodoo.js`
+
+---
+
+# 11. HTML‑Oberflächen
+
+- **index.html** – Startseite  
+- **ID.html** – Modulübersicht  
+
+---
+
+# 12. Dokumentation
+
+- **README.md** – diese Datei  
+- **mind.md** – interne Logik  
+- **uni.md** – universelle Regeln  
+
+---
+
+# 13. Ziel des depth‑Systems
+
+Das depth‑Framework ist ein vollständiges, fraktales Kraft‑, Teilungs‑ und Axiom‑System, das:
+
+- dynamisch skaliert  
+- Kräfte berechnet  
+- Achsen aktiviert  
+- Weltmodule simuliert  
+- technische Systeme einbindet  
+- Zustände erkennt  
+- Verbrauch und Produktion modelliert  
+- Axiome ausführt  
+- fraktale Tiefe erzeugt  
+
+Es ist vollständig modular und kann in Simulationen, Engines, Logiksystemen, KI‑Modellen und dynamischen Frameworks eingesetzt werden.
+
