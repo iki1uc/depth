@@ -1,13 +1,17 @@
+import { Energie } from "./energie.js";
+
 export const VectorRenderer = {
 
     draw(vec, api) {
 
         if (api === "OpenGL") {
-            return GL_Vertex(vec);
+            const out = GL_Vertex(vec);
+            return { out, energie: Energie.gl(vec) };
         }
 
         if (api === "D3D") {
-            return D3D_Vertex(vec);
+            const out = D3D_Vertex(vec);
+            return { out, energie: Energie.d3d(vec) };
         }
 
         if (api === "DirectX") {
@@ -17,7 +21,8 @@ export const VectorRenderer = {
                 [0,0,1,0],
                 [0,0,0,1]
             ];
-            return DX_VectorMultiply(vec, mat);
+            const out = DX_VectorMultiply(vec, mat);
+            return { out, energie: Energie.dx(vec, mat) };
         }
     }
 };
